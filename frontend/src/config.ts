@@ -6,6 +6,8 @@ export interface Config {
   logLevel: keyof typeof LogLevel;
 }
 
+#aaaaa
+
 export const config: Config = {
   site: { name: 'Rythmix', description: 'Collaborative Music Production', themeColor: '#090a0b', url: getSiteURL() },
   logLevel: (process.env.NEXT_PUBLIC_LOG_LEVEL as keyof typeof LogLevel) ?? LogLevel.ALL,
